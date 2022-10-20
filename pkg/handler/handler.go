@@ -31,5 +31,7 @@ func (h *Handler) InitRoutes() *gin.Engine {
 				items.DELETE("/:item_id", h.deleteItem)
 			}
 		}
+
+		return router
 	}
 }
